@@ -1,16 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
-          { key: 'Cross-Origin-Embedder-Policy', value: 'require-corp' },
-        ],
-      },
-    ];
+  output: "export",
+  images: {
+    unoptimized: true
   },
+  basePath: "/chesterking4204-screen-recording-and-trimming",
+  assetPrefix: "/chesterking4204-screen-recording-and-trimming/",
 };
 
 module.exports = nextConfig;

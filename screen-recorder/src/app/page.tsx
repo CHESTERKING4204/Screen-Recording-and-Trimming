@@ -1,6 +1,5 @@
 
 'use client';
-export const dynamic = "force-dynamic";
 
 import { useState } from 'react';
 import ScreenRecorder from '@/components/ScreenRecorder';
@@ -64,5 +63,6 @@ export default function Home() {
     </main>
   );
 }
+
 
 
